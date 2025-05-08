@@ -4,7 +4,6 @@
     include_once('connection.php');
     $con = connection();
 
-
     if (isset($_POST['login'])){
         $username  = $_POST['username'];
         $password  = $_POST['password'];

@@ -10,7 +10,6 @@
     $items = $con->query($sql) or die($con->error);
     $row = $items->fetch_assoc();
 
-    // Fetch all categories
     $sql = 'SELECT * FROM categories';
     $categories = $con->query($sql) or die($con->error);
 
@@ -23,12 +22,10 @@
         $categoryselect = $_POST['categoryselect'];
         $categoryinput = $_POST['categoryinput'];
 
-        // Temporarily insert with dummy category
         $sql = "INSERT INTO `items`(`name`, `description`, `quantity`, `price`, `category_id`) 
                 VALUES ('$name', '$description', '$quantity', '$price', 1)";
         $con->query($sql) or die($con->error);
 
-        // Get the newly inserted item
         $sql = "SELECT * FROM `items` 
                 WHERE `name` = '$name' AND `description` = '$description' 
                 AND `quantity` = $quantity AND `price` = $price 
@@ -37,7 +34,6 @@
         $newitem = $newitem->fetch_assoc();
         $newitemID = $newitem['id'];
 
-        // Handle existing or new category
         if ($categoryinput == '') {
             $sql = "UPDATE `items` SET `category_id` = '$categoryselect' WHERE `id` = '$newitemID'";
             $con->query($sql) or die($con->error);
