@@ -95,7 +95,7 @@
         </div>
 
         <div class="btns mt-3">
-            <a id="back" class="btn btn-outline-dark" href="home.php">Back</a>
+            <a id="back" class="btn btn-outline-dark" href="read.php">Back</a>
             <input id="add" class="btn btn-dark col-1" type="submit" name="submit" value="Add Item">
         </div>
     </form>
