@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+#search-btn, .add-btn{
+    width: 150px;
+    margin-left: 10px;
+}
+form label {
+    margin-right: 10px;
+}
+form > input {
+    width: 400px;
+}

@@ -1,0 +1,14 @@
+form{
+    margin-top: 35px;
+    width: 900px;
+    margin-inline: auto;
+    padding: 20px 100px;
+}
+#back, #save{
+    margin-top: 35px;
+    width: 100px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}

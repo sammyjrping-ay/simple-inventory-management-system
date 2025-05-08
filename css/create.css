@@ -1,0 +1,22 @@
+form{
+    margin-top: 40px;
+    margin-inline: auto;
+    width: 900px;
+    padding: 20px 80px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+label{
+    margin-top: 15px;
+}
+.row{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#add, #back, #save{
+    width: 100px;
+}
